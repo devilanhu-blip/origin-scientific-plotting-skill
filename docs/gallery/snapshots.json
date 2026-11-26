@@ -1,0 +1,816 @@
+{
+  "kind": "SIMULATED",
+  "artifact_type": "OFFLINE_PREVIEW",
+  "source_sha256": "c51448b1c1546a66db958e0404e42d17e6e2000b60a605583aac65c001cd1ad2",
+  "common_segment_option": [
+    "降温",
+    "symbol",
+    "square"
+  ],
+  "profiles": {
+    "clean": {
+      "image": "SIMULATED-clean-offline-preview.png",
+      "image_sha256": "4b125963fa4c1225a88a8b6815a3f618f185511df2fa562e7e74ec727293a8ac",
+      "science_digest": "3090ed69c24b9445b6d5a08a47611c5ea2900c9787c8104dd29408f4c6cb975b",
+      "plan_digest": "9289031c343a03e8f7bf0807577df21d08817b3443259bd92be03e1d5b85e2cf",
+      "plan": {
+        "schema": "m4-mvp1.plan/1",
+        "status": "OFFLINE_PLAN",
+        "native_authorized": false,
+        "native_observed": false,
+        "task_sha256": "5c3899fedd1f262c0ea03ea25b7ae69f190e4e2630edf6f072e93b0ef137cbca",
+        "data": {
+          "kind": "SIMULATED",
+          "source_name": "SIMULATED_voltage.csv",
+          "source_sha256": "c51448b1c1546a66db958e0404e42d17e6e2000b60a605583aac65c001cd1ad2",
+          "row_count": 8,
+          "columns": [
+            {
+              "header": "温度 [K]",
+              "quantity": "温度",
+              "unit": "K",
+              "values": [
+                290.0,
+                300.0,
+                310.0,
+                320.0,
+                320.0,
+                310.0,
+                300.0,
+                290.0
+              ],
+              "tokens": [
+                "290",
+                "300",
+                "310",
+                "320",
+                "320",
+                "310",
+                "300",
+                "290"
+              ]
+            },
+            {
+              "header": "电压 [mV]",
+              "quantity": "电压",
+              "unit": "mV",
+              "values": [
+                1.12,
+                1.35,
+                1.46,
+                1.81,
+                1.76,
+                1.53,
+                1.27,
+                1.06
+              ],
+              "tokens": [
+                "1.12",
+                "1.35",
+                "1.46",
+                "1.81",
+                "1.76",
+                "1.53",
+                "1.27",
+                "1.06"
+              ]
+            },
+            {
+              "header": "电压绝对误差 [mV]",
+              "quantity": "电压绝对误差",
+              "unit": "mV",
+              "values": [
+                0.06,
+                0.08,
+                0.05,
+                0.11,
+                0.09,
+                0.07,
+                0.04,
+                0.06
+              ],
+              "tokens": [
+                "0.06",
+                "0.08",
+                "0.05",
+                "0.11",
+                "0.09",
+                "0.07",
+                "0.04",
+                "0.06"
+              ]
+            }
+          ],
+          "figures": [
+            {
+              "id": "Figure1",
+              "title": "SIMULATED_voltage",
+              "axes": {
+                "x": {
+                  "quantity": "温度",
+                  "unit": "K"
+                },
+                "y": {
+                  "quantity": "电压",
+                  "unit": "mV"
+                }
+              },
+              "curves": [
+                {
+                  "id": "Curve1",
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "label": "薄膜 A · 升温",
+                  "x": "温度 [K]",
+                  "y": "电压 [mV]",
+                  "kind": "linesymbol",
+                  "rows": [
+                    1,
+                    4
+                  ],
+                  "y_error": {
+                    "column": "电压绝对误差 [mV]",
+                    "definition": "模拟仪器给出的同单位对称绝对半宽"
+                  },
+                  "segment": "升温"
+                },
+                {
+                  "id": "Curve2",
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "label": "薄膜 A · 降温",
+                  "x": "温度 [K]",
+                  "y": "电压 [mV]",
+                  "kind": "linesymbol",
+                  "rows": [
+                    5,
+                    8
+                  ],
+                  "y_error": {
+                    "column": "电压绝对误差 [mV]",
+                    "definition": "模拟仪器给出的同单位对称绝对半宽"
+                  },
+                  "segment": "降温"
+                }
+              ],
+              "legend_position": "outside-right"
+            }
+          ],
+          "grouping": {
+            "column": "样品",
+            "samples": {
+              "Sample_c5d40e88a75cba2f": "薄膜 A"
+            },
+            "branch_column": "阶段"
+          }
+        },
+        "data_sha256": "889a6793a65eaf9cc00e9f43e3756ba256ba94d12f90abfe70eacb29b1fe89b2",
+        "styles": {
+          "preset": "clean",
+          "preset_version": "1.0.0",
+          "preset_content_sha256": "c509736376cb55678a23ad7646f78cd4edd9d2a7f78940c1aafd027fb4e3a329",
+          "samples": {
+            "Sample_c5d40e88a75cba2f": {
+              "line": "solid",
+              "line_width": 1.1,
+              "symbol_size": 5.0,
+              "color": "#0072B2",
+              "symbol": "circle",
+              "fill": "solid"
+            }
+          },
+          "segments": {
+            "降温": {
+              "line": "dash",
+              "fill": "open",
+              "symbol": "square"
+            }
+          }
+        },
+        "style_sha256": "02283c740a473510bf1a189f2c6d0401f2441ccb7e55338fd03cd66ed9f2e4b5",
+        "object_map": {
+          "workbook": "M4Data",
+          "worksheet": "Raw",
+          "figures": {
+            "Figure1": {
+              "page": "M4Fig1",
+              "layer": 1,
+              "curves": {
+                "Curve1": {
+                  "plot": 1,
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "x_column": 1,
+                  "y_column": 2,
+                  "rows": [
+                    1,
+                    4
+                  ],
+                  "error_plot": 2,
+                  "y_error_column": 3
+                },
+                "Curve2": {
+                  "plot": 3,
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "x_column": 1,
+                  "y_column": 2,
+                  "rows": [
+                    5,
+                    8
+                  ],
+                  "error_plot": 4,
+                  "y_error_column": 3
+                }
+              }
+            }
+          }
+        },
+        "excluded_csv_headers": [
+          "样品",
+          "阶段",
+          "采样备注"
+        ],
+        "style_name": "clean"
+      },
+      "style_snapshot": {
+        "schema": "m4plot.personal-style/1",
+        "name": "clean",
+        "base": "clean",
+        "legend_position": "outside-right",
+        "slots": [
+          {
+            "sample": "Sample_c5d40e88a75cba2f",
+            "style": {
+              "line": "solid",
+              "line_width": 1.1,
+              "symbol_size": 5.0,
+              "color": "#0072B2",
+              "symbol": "circle",
+              "fill": "solid"
+            }
+          },
+          {
+            "style": {
+              "line": "solid",
+              "line_width": 1.1,
+              "symbol_size": 5.0,
+              "color": "#D55E00",
+              "symbol": "square",
+              "fill": "open"
+            }
+          },
+          {
+            "style": {
+              "line": "solid",
+              "line_width": 1.1,
+              "symbol_size": 5.0,
+              "color": "#009E73",
+              "symbol": "circle",
+              "fill": "open"
+            }
+          }
+        ],
+        "segments": {
+          "降温": {
+            "line": "dash",
+            "fill": "open",
+            "symbol": "square"
+          }
+        }
+      }
+    },
+    "mono": {
+      "image": "SIMULATED-mono-offline-preview.png",
+      "image_sha256": "43ecc4a45fb1da75ebe693a2e0572842e2bd7665febe67559014cdd7a88d14df",
+      "science_digest": "3090ed69c24b9445b6d5a08a47611c5ea2900c9787c8104dd29408f4c6cb975b",
+      "plan_digest": "006e6c65cedf7135a32b831ddaddb422e6a716ce08f005303d63af5fa0203b8b",
+      "plan": {
+        "schema": "m4-mvp1.plan/1",
+        "status": "OFFLINE_PLAN",
+        "native_authorized": false,
+        "native_observed": false,
+        "task_sha256": "7cb0d4e8c4ae366986c521ffebca1dd1b8c6e16192d06c9d0efe54e7bb93e101",
+        "data": {
+          "kind": "SIMULATED",
+          "source_name": "SIMULATED_voltage.csv",
+          "source_sha256": "c51448b1c1546a66db958e0404e42d17e6e2000b60a605583aac65c001cd1ad2",
+          "row_count": 8,
+          "columns": [
+            {
+              "header": "温度 [K]",
+              "quantity": "温度",
+              "unit": "K",
+              "values": [
+                290.0,
+                300.0,
+                310.0,
+                320.0,
+                320.0,
+                310.0,
+                300.0,
+                290.0
+              ],
+              "tokens": [
+                "290",
+                "300",
+                "310",
+                "320",
+                "320",
+                "310",
+                "300",
+                "290"
+              ]
+            },
+            {
+              "header": "电压 [mV]",
+              "quantity": "电压",
+              "unit": "mV",
+              "values": [
+                1.12,
+                1.35,
+                1.46,
+                1.81,
+                1.76,
+                1.53,
+                1.27,
+                1.06
+              ],
+              "tokens": [
+                "1.12",
+                "1.35",
+                "1.46",
+                "1.81",
+                "1.76",
+                "1.53",
+                "1.27",
+                "1.06"
+              ]
+            },
+            {
+              "header": "电压绝对误差 [mV]",
+              "quantity": "电压绝对误差",
+              "unit": "mV",
+              "values": [
+                0.06,
+                0.08,
+                0.05,
+                0.11,
+                0.09,
+                0.07,
+                0.04,
+                0.06
+              ],
+              "tokens": [
+                "0.06",
+                "0.08",
+                "0.05",
+                "0.11",
+                "0.09",
+                "0.07",
+                "0.04",
+                "0.06"
+              ]
+            }
+          ],
+          "figures": [
+            {
+              "id": "Figure1",
+              "title": "SIMULATED_voltage",
+              "axes": {
+                "x": {
+                  "quantity": "温度",
+                  "unit": "K"
+                },
+                "y": {
+                  "quantity": "电压",
+                  "unit": "mV"
+                }
+              },
+              "curves": [
+                {
+                  "id": "Curve1",
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "label": "薄膜 A · 升温",
+                  "x": "温度 [K]",
+                  "y": "电压 [mV]",
+                  "kind": "linesymbol",
+                  "rows": [
+                    1,
+                    4
+                  ],
+                  "y_error": {
+                    "column": "电压绝对误差 [mV]",
+                    "definition": "模拟仪器给出的同单位对称绝对半宽"
+                  },
+                  "segment": "升温"
+                },
+                {
+                  "id": "Curve2",
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "label": "薄膜 A · 降温",
+                  "x": "温度 [K]",
+                  "y": "电压 [mV]",
+                  "kind": "linesymbol",
+                  "rows": [
+                    5,
+                    8
+                  ],
+                  "y_error": {
+                    "column": "电压绝对误差 [mV]",
+                    "definition": "模拟仪器给出的同单位对称绝对半宽"
+                  },
+                  "segment": "降温"
+                }
+              ],
+              "legend_position": "outside-right"
+            }
+          ],
+          "grouping": {
+            "column": "样品",
+            "samples": {
+              "Sample_c5d40e88a75cba2f": "薄膜 A"
+            },
+            "branch_column": "阶段"
+          }
+        },
+        "data_sha256": "889a6793a65eaf9cc00e9f43e3756ba256ba94d12f90abfe70eacb29b1fe89b2",
+        "styles": {
+          "preset": "mono",
+          "preset_version": "1.0.0",
+          "preset_content_sha256": "afc34edd87be0a7a5b3af8f5803d7c277ee2450458df2e1d8d95b848f2e1e503",
+          "samples": {
+            "Sample_c5d40e88a75cba2f": {
+              "line": "solid",
+              "line_width": 1.1,
+              "symbol_size": 5.0,
+              "color": "#000000",
+              "symbol": "circle",
+              "fill": "solid"
+            }
+          },
+          "segments": {
+            "降温": {
+              "line": "dash",
+              "fill": "open",
+              "symbol": "square"
+            }
+          }
+        },
+        "style_sha256": "4e02b5ac5fbb6e7129847908b46073d980d910e975d2b3078432466913d59277",
+        "object_map": {
+          "workbook": "M4Data",
+          "worksheet": "Raw",
+          "figures": {
+            "Figure1": {
+              "page": "M4Fig1",
+              "layer": 1,
+              "curves": {
+                "Curve1": {
+                  "plot": 1,
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "x_column": 1,
+                  "y_column": 2,
+                  "rows": [
+                    1,
+                    4
+                  ],
+                  "error_plot": 2,
+                  "y_error_column": 3
+                },
+                "Curve2": {
+                  "plot": 3,
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "x_column": 1,
+                  "y_column": 2,
+                  "rows": [
+                    5,
+                    8
+                  ],
+                  "error_plot": 4,
+                  "y_error_column": 3
+                }
+              }
+            }
+          }
+        },
+        "excluded_csv_headers": [
+          "样品",
+          "阶段",
+          "采样备注"
+        ],
+        "style_name": "mono"
+      },
+      "style_snapshot": {
+        "schema": "m4plot.personal-style/1",
+        "name": "mono",
+        "base": "mono",
+        "legend_position": "outside-right",
+        "slots": [
+          {
+            "sample": "Sample_c5d40e88a75cba2f",
+            "style": {
+              "line": "solid",
+              "line_width": 1.1,
+              "symbol_size": 5.0,
+              "color": "#000000",
+              "symbol": "circle",
+              "fill": "solid"
+            }
+          },
+          {
+            "style": {
+              "line": "solid",
+              "line_width": 1.1,
+              "symbol_size": 5.0,
+              "color": "#4D4D4D",
+              "symbol": "square",
+              "fill": "open"
+            }
+          },
+          {
+            "style": {
+              "line": "solid",
+              "line_width": 1.1,
+              "symbol_size": 5.0,
+              "color": "#808080",
+              "symbol": "circle",
+              "fill": "open"
+            }
+          }
+        ],
+        "segments": {
+          "降温": {
+            "line": "dash",
+            "fill": "open",
+            "symbol": "square"
+          }
+        }
+      }
+    },
+    "汇报": {
+      "image": "SIMULATED-presentation-offline-preview.png",
+      "image_sha256": "fa23a5fb9cdd908abf624635df2fda847f50d20214b3e2777a1e6b01a8c25245",
+      "science_digest": "3090ed69c24b9445b6d5a08a47611c5ea2900c9787c8104dd29408f4c6cb975b",
+      "plan_digest": "65f2292bc363f1444740308b46f8feefaf04758d75d6dc6322921aaad466ba16",
+      "plan": {
+        "schema": "m4-mvp1.plan/1",
+        "status": "OFFLINE_PLAN",
+        "native_authorized": false,
+        "native_observed": false,
+        "task_sha256": "13788477af40b25b2899ab72880eb6dfb7eae66411dca3981f2b8a31bc7780ac",
+        "data": {
+          "kind": "SIMULATED",
+          "source_name": "SIMULATED_voltage.csv",
+          "source_sha256": "c51448b1c1546a66db958e0404e42d17e6e2000b60a605583aac65c001cd1ad2",
+          "row_count": 8,
+          "columns": [
+            {
+              "header": "温度 [K]",
+              "quantity": "温度",
+              "unit": "K",
+              "values": [
+                290.0,
+                300.0,
+                310.0,
+                320.0,
+                320.0,
+                310.0,
+                300.0,
+                290.0
+              ],
+              "tokens": [
+                "290",
+                "300",
+                "310",
+                "320",
+                "320",
+                "310",
+                "300",
+                "290"
+              ]
+            },
+            {
+              "header": "电压 [mV]",
+              "quantity": "电压",
+              "unit": "mV",
+              "values": [
+                1.12,
+                1.35,
+                1.46,
+                1.81,
+                1.76,
+                1.53,
+                1.27,
+                1.06
+              ],
+              "tokens": [
+                "1.12",
+                "1.35",
+                "1.46",
+                "1.81",
+                "1.76",
+                "1.53",
+                "1.27",
+                "1.06"
+              ]
+            },
+            {
+              "header": "电压绝对误差 [mV]",
+              "quantity": "电压绝对误差",
+              "unit": "mV",
+              "values": [
+                0.06,
+                0.08,
+                0.05,
+                0.11,
+                0.09,
+                0.07,
+                0.04,
+                0.06
+              ],
+              "tokens": [
+                "0.06",
+                "0.08",
+                "0.05",
+                "0.11",
+                "0.09",
+                "0.07",
+                "0.04",
+                "0.06"
+              ]
+            }
+          ],
+          "figures": [
+            {
+              "id": "Figure1",
+              "title": "SIMULATED_voltage",
+              "axes": {
+                "x": {
+                  "quantity": "温度",
+                  "unit": "K"
+                },
+                "y": {
+                  "quantity": "电压",
+                  "unit": "mV"
+                }
+              },
+              "curves": [
+                {
+                  "id": "Curve1",
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "label": "薄膜 A · 升温",
+                  "x": "温度 [K]",
+                  "y": "电压 [mV]",
+                  "kind": "linesymbol",
+                  "rows": [
+                    1,
+                    4
+                  ],
+                  "y_error": {
+                    "column": "电压绝对误差 [mV]",
+                    "definition": "模拟仪器给出的同单位对称绝对半宽"
+                  },
+                  "segment": "升温"
+                },
+                {
+                  "id": "Curve2",
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "label": "薄膜 A · 降温",
+                  "x": "温度 [K]",
+                  "y": "电压 [mV]",
+                  "kind": "linesymbol",
+                  "rows": [
+                    5,
+                    8
+                  ],
+                  "y_error": {
+                    "column": "电压绝对误差 [mV]",
+                    "definition": "模拟仪器给出的同单位对称绝对半宽"
+                  },
+                  "segment": "降温"
+                }
+              ],
+              "legend_position": "outside-right"
+            }
+          ],
+          "grouping": {
+            "column": "样品",
+            "samples": {
+              "Sample_c5d40e88a75cba2f": "薄膜 A"
+            },
+            "branch_column": "阶段"
+          }
+        },
+        "data_sha256": "889a6793a65eaf9cc00e9f43e3756ba256ba94d12f90abfe70eacb29b1fe89b2",
+        "styles": {
+          "preset": "clean",
+          "preset_version": "1.0.0",
+          "preset_content_sha256": "c509736376cb55678a23ad7646f78cd4edd9d2a7f78940c1aafd027fb4e3a329",
+          "samples": {
+            "Sample_c5d40e88a75cba2f": {
+              "line": "solid",
+              "line_width": 2.0,
+              "symbol_size": 8.0,
+              "color": "#174C80",
+              "symbol": "circle",
+              "fill": "solid"
+            }
+          },
+          "segments": {
+            "降温": {
+              "line": "dash",
+              "fill": "open",
+              "symbol": "square"
+            }
+          }
+        },
+        "style_sha256": "67fa66d96cc2dcb3ef7568692b39ffd069790d50d7a677c52739798b8f258d5b",
+        "object_map": {
+          "workbook": "M4Data",
+          "worksheet": "Raw",
+          "figures": {
+            "Figure1": {
+              "page": "M4Fig1",
+              "layer": 1,
+              "curves": {
+                "Curve1": {
+                  "plot": 1,
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "x_column": 1,
+                  "y_column": 2,
+                  "rows": [
+                    1,
+                    4
+                  ],
+                  "error_plot": 2,
+                  "y_error_column": 3
+                },
+                "Curve2": {
+                  "plot": 3,
+                  "sample": "Sample_c5d40e88a75cba2f",
+                  "x_column": 1,
+                  "y_column": 2,
+                  "rows": [
+                    5,
+                    8
+                  ],
+                  "error_plot": 4,
+                  "y_error_column": 3
+                }
+              }
+            }
+          }
+        },
+        "excluded_csv_headers": [
+          "样品",
+          "阶段",
+          "采样备注"
+        ],
+        "style_name": "汇报"
+      },
+      "style_snapshot": {
+        "schema": "m4plot.personal-style/1",
+        "name": "汇报",
+        "base": "clean",
+        "legend_position": "outside-right",
+        "slots": [
+          {
+            "sample": "Sample_c5d40e88a75cba2f",
+            "style": {
+              "line": "solid",
+              "line_width": 2.0,
+              "symbol_size": 8.0,
+              "color": "#174C80",
+              "symbol": "circle",
+              "fill": "solid"
+            }
+          },
+          {
+            "style": {
+              "line": "solid",
+              "line_width": 2.0,
+              "symbol_size": 8.0,
+              "color": "#B54E12",
+              "symbol": "square",
+              "fill": "open"
+            }
+          },
+          {
+            "style": {
+              "line": "solid",
+              "line_width": 2.0,
+              "symbol_size": 8.0,
+              "color": "#49753A",
+              "symbol": "circle",
+              "fill": "open"
+            }
+          }
+        ],
+        "segments": {
+          "降温": {
+            "line": "dash",
+            "fill": "open",
+            "symbol": "square"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+name: Offline preview issue
+description: Report an installation, CSV validation or offline preview issue.
+title: "[Offline] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Alpha version, Windows edition and Python version
+      placeholder: v0.1.0-alpha.1, Windows 11 x64, CPython 3.12.x
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal steps and observed result
+      description: Use the bundled SIMULATED CSV if possible. Paste only redacted error text and include the expected result.
+    validations:
+      required: true
+  - type: textarea
+    id: columns
+    attributes:
+      label: Column units and error definition if relevant
+      description: Omit personal, institutional and experiment identifiers, credentials and unpublished measurements.

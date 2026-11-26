@@ -1,0 +1,91 @@
+{
+  "candidate": "v0.1.0-alpha.1",
+  "authorization": "APPROVED_BY_MONYS_QI_FOR_PUBLIC_OFFLINE_ALPHA",
+  "scope": "Offline Windows x64 CPython 3.12 source snapshot. These exact paths define the approved public snapshot. Original project materials are licensed under MIT. Third-party materials retain their own terms.",
+  "groups": [
+    {
+      "purpose": "Offline scientific source and built-in style resources",
+      "rights_review": "Original project source and styles approved by Monys Qi under MIT",
+      "files": [
+        ".agents/skills/origin-alpha/runtime/m4plot/__init__.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/appearance.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/common.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/csv_groups.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/csv_task.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/drafts.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/environment.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/error_definition.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/legend_layout.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/offline.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/paths.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/personal_styles.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/planner.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/science_check.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/science_headers.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/sketch.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/styles.py",
+        ".agents/skills/origin-alpha/runtime/m4plot/summary.py",
+        ".agents/skills/origin-alpha/runtime/presets/clean.json",
+        ".agents/skills/origin-alpha/runtime/presets/mono.json",
+        ".agents/skills/origin-alpha/scripts/origin_trial.py"
+      ]
+    },
+    {
+      "purpose": "Simulated example and public derived previews",
+      "rights_review": "Simulated example, original preview PNGs and gallery snapshots approved by Monys Qi under MIT. Font files are excluded.",
+      "files": [
+        ".agents/skills/origin-alpha/examples/SIMULATED_voltage.csv",
+        "docs/gallery/SIMULATED-clean-offline-preview.png",
+        "docs/gallery/SIMULATED-mono-offline-preview.png",
+        "docs/gallery/SIMULATED-presentation-offline-preview.png",
+        "docs/gallery/snapshots.json"
+      ]
+    },
+    {
+      "purpose": "User entry points, rights and evidence summaries",
+      "rights_review": "Original documentation approved by Monys Qi under MIT. Third-party terms remain in effect.",
+      "files": [
+        ".agents/skills/origin-alpha/SKILL.md",
+        "CHANGELOG.md",
+        "CONTRIBUTING.md",
+        "LICENSE",
+        "README.md",
+        "README.zh-CN.md",
+        "SECURITY.md",
+        "THIRD_PARTY_NOTICES.md",
+        "docs/capabilities.md",
+        "docs/case-studies/01-order.md",
+        "docs/case-studies/02-error.md",
+        "docs/case-studies/03-style.md",
+        "docs/dependencies.md",
+        "docs/licensing.md",
+        "docs/release-draft.md",
+        "docs/styles.md",
+        "docs/trials.md",
+        "docs/validation.md"
+      ]
+    },
+    {
+      "purpose": "Offline operation, tests and release controls",
+      "rights_review": "Original project files approved by Monys Qi under MIT. Referenced dependencies retain their own terms.",
+      "files": [
+        ".gitattributes",
+        ".github/ISSUE_TEMPLATE/config.yml",
+        ".github/ISSUE_TEMPLATE/offline.yml",
+        ".github/workflows/offline.yml",
+        ".gitignore",
+        "alpha-config.example.json",
+        "proposed-public-files.json",
+        "requirements.txt",
+        "sha256-inventory.json",
+        "tests/offline_cli.py",
+        "tests/render_gallery.py",
+        "tests/test_offline_cli.py",
+        "tools/ci_fonts.py",
+        "tools/first_preview.py",
+        "tools/package_snapshot.py",
+        "tools/verify_public.py"
+      ]
+    }
+  ]
+}

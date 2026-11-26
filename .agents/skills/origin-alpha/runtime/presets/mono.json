@@ -1,0 +1,11 @@
+{
+  "schema": "m4-mvp1.style-preset/1",
+  "id": "mono",
+  "version": "1.0.0",
+  "defaults": {"line": "solid", "line_width": 1.1, "symbol_size": 5.0},
+  "slots": [
+    {"color": "#000000", "symbol": "circle", "fill": "solid"},
+    {"color": "#4D4D4D", "symbol": "square", "fill": "open"},
+    {"color": "#808080", "symbol": "circle", "fill": "open"}
+  ]
+}
